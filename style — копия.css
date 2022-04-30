@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+   transform: translate(-50%, -20%);
+}
+
+body {
+    background-image: url("pictures/IMG_8369.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    animation: grow 1s;
+}
+
+@keyframes grow {
+    0% {
+        background-size: 0% auto;
+        background-attachment: fixed;
+    }
+
+    100% {
+        background-size: 100% auto;
+        background-attachment: fixed;
+    }
+}
