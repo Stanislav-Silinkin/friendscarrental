@@ -5,11 +5,13 @@
 
 html {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
+  color: white;
 }
 
-div, .footer a:link, a:visited, a:active {
+div, h1, table, .footer a:link, a:visited, a:active {
   color: white;
   background-color: #5485ad;
+  margin: 0;
 }
 
 #logo {
@@ -18,7 +20,7 @@ div, .footer a:link, a:visited, a:active {
   float: left;
 }
 
-.header {
+h1 {
   padding: 33px;
   text-align: center;
 }
@@ -52,6 +54,20 @@ li a {
 
 li a:hover, .account:hover {
   background-color: #256497;
+}
+
+table, td {
+  width: 100%;
+  font-size: 20px;
+  border-collapse: collapse;
+}
+
+td {
+  width: 33.3%;
+  text-align: center;
+  background-color: #256497;
+  padding: 30px;
+  border: 40px solid #5485ad;
 }
 
 .footer {
