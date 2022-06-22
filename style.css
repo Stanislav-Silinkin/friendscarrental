@@ -1,9 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #5485ad;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
-html {
+body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   color: white;
   background-color: #5485ad;
@@ -71,7 +102,7 @@ li a:hover, .account:hover {
 
 @media screen and (max-width: 620px) {
   /* For mobile phones: */
-   .advantage li, h1 {
+  /* .advantage li, h1 {
     max-width: 100%;
     margin: 10px;
     padding: 20px;
@@ -99,3 +130,4 @@ li a:hover, .account:hover {
   max-width: 100%;
   height: auto;
 }
+*/
