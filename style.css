@@ -1,133 +1,120 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-
-body {
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
-  color: white;
-  background-color: #5485ad;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 
 body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   color: white;
-  background-color: #5485ad;
-}
-
-div, .account, h1, table, a:link, a:visited, a:active {
-  color: white;
+  background-color: #364558;
+  /* #5485ad;*/
+  font-size: 16px;
   margin: 0;
 }
 
-#logo {
-  width: 150px;
-  height: 150px;
-  float: left;
-  margin-left: 10px;
-}
-
-h1 {
-  padding: 33px;
+.logo {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  width: 20%;
   text-align: center;
+  margin-left: 10px;
+  margin-top: 0;
+  float: left;
 }
 
-.account {
-  float: right;
+.logo a:hover {
+  color: #021625;
 }
 
-.account a:link, a:visited, a:active {
-  text-decoration: none;
+.logo p {
+  margin: 10px;
 }
 
-ul {
+.service-name {
+  text-align: center;
+  float: left;
+  width: 70%;
+}
+
+.service-name h1 {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+li {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #5485ad;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 li a {
   float: left;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 10px 16px;
 }
 
-li a:hover, .account:hover {
-  background-color: #256497;
+.menu a:hover {
+  background-color: #021625;
 }
 
-.advantage {
-  font-size: 20px;
-  display: table;
-  margin:  auto;
+.menu ul {
+  padding-left: 20px;
+  margin-top: 0;
 }
 
-.advantage li {
-  text-align: center;
-  margin: 10px 50px;
-  padding: 20px;
-  background-color: #256497;
-}
-
-@media screen and (max-width: 620px) {
-  /* For mobile phones: */
-  /* .advantage li, h1 {
-    max-width: 100%;
-    margin: 10px;
-    padding: 20px;
-    position: relative;
-  }
-}
-
-.footer {
-  text-align: right;
-  font-size: 12px;
-  padding: 15px;
-}
-
-.footer a:hover {
-  color: red;
-}
-
-.contact {
-  float: right;
-  text-decoration: none;
-  padding: 20px;
+.head {
+  /* Safari */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 #car {
   max-width: 100%;
   height: auto;
 }
-*/
+
+.our-mission {
+  max-width: 50%;
+  margin: 20px auto;
+}
+
+.benefits {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.benefits h2 {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.benefits-text {
+  width: 33%;
+  border: 1px solid;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 700px) {
+  .logo,
+  .service-name,
+  .our-mission {
+    width: 100%;
+  }
+
+  .head {
+    position: static;
+  }
+}
