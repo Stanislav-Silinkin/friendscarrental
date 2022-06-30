@@ -93,7 +93,8 @@ header {
   flex-wrap: wrap;
 }
 
-.benefits h2 {
+.benefits h2,
+.price h2 {
   width: 100%;
   margin-bottom: 30px;
 }
@@ -149,5 +150,10 @@ footer:before {
   margin-right: auto;
   max-width: 60%;
   height: auto;
+}
 
+.price {
+  max-width: 60%;
+  text-align: center;
+  margin: 20px auto;
 }
