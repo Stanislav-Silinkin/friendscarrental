@@ -1,13 +1,15 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
-body {
+body,
+html {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   color: white;
   background-color: #364558;
   font-size: 16px;
-  margin: 0;
+  height: 100%;
 }
 
 .logo {
@@ -21,9 +23,9 @@ body {
   float: left;
 }
 
-.logo a:hover,
-.contacts a:hover {
+.logo a:hover {
   color: #021625;
+  font-size: 25px;
 }
 
 .logo p {
@@ -38,7 +40,6 @@ body {
 
 .service-name h1 {
   margin-bottom: 10px;
-  margin-top: 0;
 }
 
 li {
@@ -62,7 +63,6 @@ nav a:hover {
 
 nav ul {
   padding-left: 20px;
-  margin-top: 0;
 }
 
 header {
@@ -71,7 +71,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #364558;
-  display:flow-root;
+  display: flow-root;
 }
 
 #car {
@@ -93,10 +93,10 @@ header {
   flex-wrap: wrap;
 }
 
-.benefits h2,
-.price h2 {
+.benefits h2 {
   width: 100%;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .benefits-text {
@@ -110,24 +110,24 @@ footer:before {
   content: "";
   display: block;
   width: 100%;
-  height:0.5px;
+  height: 0.5px;
   background-color: white;
 }
 
-/*footer {
-  position: relative;
-  bottom: 0;
-  right: 0;
-}*/
-
-.contacts {
+.footer {
   font-size: 10px;
   margin: 10px;
   float: right;
 }
 
+.footer a:hover {
+  color: #021625;
+  font-size: 12px;
+}
+
 /* For mobile phones: */
 @media only screen and (max-width: 700px) {
+
   .logo,
   .service-name,
   .our-mission {
@@ -152,8 +152,76 @@ footer:before {
   height: auto;
 }
 
-.price {
-  max-width: 60%;
+.main {
+  flex: 1 1 auto;
+}
+
+/*footer внизу страницы*/
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.car-list {
+  max-width: 70%;
+  margin: 55px auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table-name {
   text-align: center;
-  margin: 20px auto;
+}
+
+.car-list th,
+.car-list td {
+  padding: 15px;
+}
+
+.car-list tr:nth-child(even) {
+  background-color: #2c394a;
+}
+
+.header-item {
+  width: 36%;
+}
+
+.header-column {
+  width: 16%;
+}
+
+.car-list th {
+  background-color: #021625;
+}
+
+.conditions {
+  max-width: 60%;
+  margin: 30px auto;
+}
+
+.service {
+  max-width: 40%;
+  margin: 30px auto;
+}
+
+.conditions h3,
+.service h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+.conditions li,
+.service li {
+  padding-bottom: 5px;
+}
+
+.contacts a:hover {
+  color: #021625;
+  font-size: 18px;
+}
+
+.main h2 {
+  text-align: center;
+  margin: 30px;
 }
