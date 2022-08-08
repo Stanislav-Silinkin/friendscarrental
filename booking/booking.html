@@ -21,7 +21,7 @@
 		<header>
 			<div class="logo">
 				<a href="../index.html">Friend's Car Rental</a>
-				<p>Тел. +71234567890</p>
+				<p>Тел. +7 123 456 78 90</p>
 			</div>
 
 			<div class="service-name">
@@ -30,21 +30,66 @@
 
 			<nav>
 				<ul>
-					<li><a href="about.html">О компании</a></li>
+					<li><a href="../about/about.html">О компании</a></li>
 					<li><a href="../cars/cars.html">Автомобили</a></li>
 					<li><a href="../price/price.html">Цена</a></li>
 					<li><a href="../conditions/conditions.html">Условия</a></li>
 					<li><a href="../service/service.html">Услуги</a></li>
 					<li><a href="../contact/contact.html">Контакты</a></li>
-					<li><a href="../booking/booking.html">Забронировать</a></li>
+					<li><a href="booking.html">Забронировать</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<main class="main">
-		
+			<h2>Выберите автомобиль:</h2>
 
-			
+			<form action="/">
+				<div class="car-booking">
+					<label for="cars">Ваш Автомобиль:</label>
+					<select id="cars" name="cars" size="1">
+						<option value="rapid">Skoda Rapid 2020 г. от 1600 р/сут</option>
+						<option value="solaris-1800">Hyundai Solaris 2020 г. от 1800 р/сут</option>
+						<option value="solaris-1900">Hyundai Solaris 2020 г. от 1900 р/сут</option>
+						<option value="tucson-3500">Hyundai Tucson 2020 г. от 3500 р/сут</option>
+						<option value="tucson-3800">Hyundai Tucson 2020 г. от 3800 р/сут</option>
+					</select>
+				</div>
+
+				<div class="date-row">
+					<div class="date-begin">
+						<label for="date-begin">Начало аренды:</label>
+						<input type="date" id="date-begin" name="date-begin">
+					</div>
+
+					<div class="date-end">
+						<label for="date-end">Конец аренды:</label>
+						<input type="date" id="date-end" name="date-end">
+					</div>
+				</div>
+
+				<div class="delivery-time">
+					<label for="delivery-time">Укажите время подачи автомобиля:</label>
+					<input type="time" id="delivery-time" name="delivery-time">
+				</div>
+				<div class="delivery-adress">
+					<label for="adress">Укажите адрес подачи автомобиля:</label>
+					<input type="text" id="adress" name="adress">
+				</div>
+
+				<div class="name">
+					<label for="name">Ваше имя:</label>
+					<input type="text" id="name" name="name">
+				</div>
+
+				<div class="phone">
+					<label for="phone">Укажите номер телефона:</label>
+					<input type="tel" id="phone" name="phone" placeholder="79001234567" pattern="[0-9]{11}" required>
+				</div>
+
+
+				
+			</form>
 		</main>
 
 		<footer>

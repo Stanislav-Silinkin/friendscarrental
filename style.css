@@ -6,7 +6,7 @@
 body,
 html {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
-  color: white;
+  color: #fff;
   background-color: #364558;
   font-size: 16px;
   height: 100%;
@@ -48,7 +48,7 @@ li {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
 li a {
@@ -111,7 +111,7 @@ footer:before {
   display: block;
   width: 100%;
   height: 0.5px;
-  background-color: white;
+  background-color: #fff;
 }
 
 .footer {
@@ -221,7 +221,99 @@ footer:before {
   font-size: 18px;
 }
 
+.contacts a {
+  padding: 0;
+}
+
 .main h2 {
   text-align: center;
   margin: 30px;
+}
+
+.contacts-location {
+  width: 80%;
+  margin: 20px auto;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contacts,
+.details {
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.contacts-location h3 {
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+form {
+  text-align: center;
+}
+
+.car-booking label,
+.date-begin label,
+.date-end label,
+.delivery-time label,
+.delivery-adress label,
+.name label,
+.phone label {
+  display: block;
+}
+
+.car-booking select {
+  width: 30%;
+  box-sizing: border-box;
+  border: none;
+  background-color: #2c394a;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  padding: 10px;
+  font-family: inherit;
+  text-align: center;
+}
+
+.car-booking option {
+  margin: 10px; /*не работает отступ в позиции выбора тачки */
+}
+
+.date-row {
+  width: 30%;
+  margin: 10px auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.date-begin input,
+.date-end input,
+.delivery-time input,
+.delivery-adress input,
+.name input,
+.phone input {
+  background: #2c394a;
+  color: #fff;
+  font-family: inherit;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+.delivery-time input {
+  width: 10%;
+  margin-bottom: 10px;
+}
+
+.delivery-adress input,
+.name input,
+.phone input {
+  text-align: left;
+  width: 30%;
+  margin-bottom: 10px;
 }
