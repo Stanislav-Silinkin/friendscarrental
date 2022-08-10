@@ -29,7 +29,7 @@
 			</div>
 
 			<nav>
-				<ul>
+				<ul class="menu">
 					<li><a href="../about/about.html">О компании</a></li>
 					<li><a href="../cars/cars.html">Автомобили</a></li>
 					<li><a href="../price/price.html">Цена</a></li>
@@ -44,7 +44,7 @@
 		<main class="main">
 			<h2>Выберите автомобиль:</h2>
 
-			<form action="/">
+			<form action="/" autocomplete="off">
 				<div class="car-booking">
 					<label for="cars">Ваш Автомобиль:</label>
 					<select id="cars" name="cars" size="1">
@@ -74,12 +74,12 @@
 				</div>
 				<div class="delivery-adress">
 					<label for="adress">Укажите адрес подачи автомобиля:</label>
-					<input type="text" id="adress" name="adress">
+					<input type="text" id="adress" name="adress" placeholder="Город, улица, номер дома">
 				</div>
 
 				<div class="name">
 					<label for="name">Ваше имя:</label>
-					<input type="text" id="name" name="name">
+					<input type="text" id="name" name="name" placeholder="Имя" required>
 				</div>
 
 				<div class="phone">
@@ -87,8 +87,7 @@
 					<input type="tel" id="phone" name="phone" placeholder="79001234567" pattern="[0-9]{11}" required>
 				</div>
 
-
-				
+				<input type="submit" value="Оставить заявку">
 			</form>
 		</main>
 
