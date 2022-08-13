@@ -133,6 +133,59 @@ footer:before {
   height: auto;
 }
 
+#car-choice {
+  margin-bottom: 50px;
+}
+
+.car-gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.short-description {
+  margin: 20px auto;
+}
+
+.car-photo {
+  width: 250px;
+  height: auto;
+}
+
+.description-table {
+  float: right;
+  margin: 0 10px 10px 10px;
+}
+
+.description-table caption {
+  text-align: left;
+  font-size: 130%;
+  margin-bottom: 10px;
+}
+
+.description-table td:nth-child(even) {
+  text-align: right;
+}
+
+/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+
+.button-position {
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+
+.description-link {
+  text-align: center;
+  background-color: #021625;
+  margin: 12px;
+  padding: 10px;
+}
+
+.description-link:hover {
+  background-color: #2c394a;
+}
+
 .main {
   flex: 1 1 auto;
 }
@@ -325,6 +378,7 @@ input[type=submit]:hover {
 
 /* For mobile phones: */
 @media only screen and (max-width:600px) {
+
   .logo,
   .service-name,
   .our-mission {
@@ -352,6 +406,24 @@ input[type=submit]:hover {
   .menu li a:hover {
     background-color: #2c394a;
     text-align: center;
+  }
+
+  .car-gallery,
+  .car-photo,
+  .short-description,
+  .description-table,
+  .description-link {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .description-table td:nth-child(odd) {
+    text-align: left;
+  }
+
+  .description-link {
+    margin-bottom: 50px;
   }
 
   .service,
