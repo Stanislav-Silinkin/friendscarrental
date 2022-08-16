@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Skoda Rapid</title>
+	<meta name="keywords" content="машина напрокат, аренда легковых автомобилей, 
+        взять машину в аренду, авто напрокат, арендовать машину, 
+        арендовать автомобиль, взять машину в аренду" />
+	<meta name="description" content="Взять авто в аренду в Новосибирске. 
+        Это просто и выгодно! Новые автомобили. Застрахованы по ОСАГО и КАСКО!" />
+	<link rel="icon" type="image/x-icon" href="../../favicon/favicon.ico">
+	<link rel="stylesheet" href="../../style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="logo">
+				<a href="../../index.html">Friend's Car Rental</a>
+				<p>Тел. +7 123 456 78 90</p>
+			</div>
+
+			<div class="service-name">
+				<h1>Прокат автомобилей для путешествий</h1>
+			</div>
+
+			<nav>
+				<ul class="menu">
+					<li><a href="../../about/about.html">О компании</a></li>
+					<li><a href="../../index.html#car-choice">Автомобили</a></li>
+					<li><a href="../../price/price.html">Цена</a></li>
+					<li><a href="../../conditions/conditions.html">Условия</a></li>
+					<li><a href="../../service/service.html">Услуги</a></li>
+					<li><a href="../../contact/contact.html">Контакты</a></li>
+					<li><a href="../../booking/booking.html">Забронировать</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="main">
+
+			<h2>Skoda Rapid 2020 г.</h2>
+
+			<div class="grid-container">
+				<div class="slideshow">
+					<img class="car-slide fade" src="DSCF4100.jpg" alt="Основной вид">
+					<img class="car-slide fade" src="DSCF4117.jpg" alt="Вид спереди">
+					<img class="car-slide fade" src="DSCF4118.jpg" alt="Вид сзади">
+					<img class="car-slide fade" src="DSCF4119.jpg" alt="Вид сбоку">
+
+					<a class="prev" onclick="plusSlides(-1)">❮</a>
+					<a class="next" onclick="plusSlides(1)">❯</a>
+
+					<br>
+
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+					</div>
+				</div>
+
+				<script>
+					var slideIndex = 1;
+					showSlides(slideIndex);
+
+					function plusSlides(n) {
+						showSlides(slideIndex += n);
+					}
+
+					function currentSlide(n) {
+						showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+						var i;
+						var slides = document.getElementsByClassName("car-slide");
+						var dots = document.getElementsByClassName("dot");
+						if (n > slides.length) { slideIndex = 1 }
+						if (n < 1) { slideIndex = slides.length }
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex - 1].style.display = "block";
+						dots[slideIndex - 1].className += " active";
+					}
+				</script>
+
+				<div class="car-info">
+					<table class="table-info">
+						<caption>Характеристики автомобиля:</caption>
+						<tr>
+							<td>Год выпуска:</td>
+							<td>2020</td>
+						</tr>
+						<tr>
+							<td>Коробка передач:</td>
+							<td>механическая</td>
+						</tr>
+						<tr>
+							<td>Объем двигателя:</td>
+							<td>1,6 л</td>
+						</tr>
+						<tr>
+							<td>Мощность двигателя:</td>
+							<td>97 л. с.</td>
+						</tr>
+						<tr>
+							<td>Расход топлива(город):</td>
+							<td>10 л</td>
+						</tr>
+					</table>
+
+					<table class="table-info second-table">
+						<tr>
+							<td>Тип топлива:</td>
+							<td>АИ 95</td>
+						</tr>
+						<tr>
+							<td>Тип привода:</td>
+							<td>передний</td>
+						</tr>
+						<tr>
+							<td>Автопрогрев:</td>
+							<td>есть</td>
+						</tr>
+						<tr>
+							<td>Кондиционер:</td>
+							<td>есть</td>
+						</tr>
+						<tr>
+							<td>Цвет:</td>
+							<td>белый</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="price">
+					<table class="car-list">
+						<caption class="table-name">Сколько стоит</caption>
+						<tr>
+							<th class="header-item">Автомобиль</th>
+							<th class="header-column">1 - 2 сут.</th>
+							<th class="header-column">3 - 6 сут.</th>
+							<th class="header-column">7 - 19 сут.</th>
+							<th class="header-column">Более 20 сут.</th>
+						</tr>
+						<tr>
+							<td>Skoda Rapid 2020 г.</td>
+							<td>2400</td>
+							<td>2200</td>
+							<td>1900</td>
+							<td>1600</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="limit">
+					<p>В тариф включен суточный пробег – 300 км, пробег суммируется
+						за каждый день аренды. В случае превышения лимита пробега,
+						Арендатор производит оплату из расчета 5 рублей за 1 км. перепробега.</p>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<address class="footer">
+				Write us: <a href="mailto:webmaster@example.com">Friend's Car Rental.</a><br>
+				Visit us at: <a href="../index.html"> www.friendscarrental.ru</a><br>
+				Lenina st. 1,Novosibirsk, Russia
+			</address>
+		</footer>
+	</div>
+</body>
+
+</html>
