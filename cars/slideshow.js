@@ -10,7 +10,7 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
+  let i;
   const slides = document.getElementsByClassName("car-slide");
   const dots = document.getElementsByClassName("dot");
   if (n > slides.length) { slideIndex = 1 }
